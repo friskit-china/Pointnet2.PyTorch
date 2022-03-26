@@ -1,3 +1,22 @@
+# A version for PyTorch 1.2 + support
+
+## the PR 25: 
+https://github.com/sshaoshuai/Pointnet2.PyTorch/pull/25
+
+## to compile spconv 1.2.1
+
+```
+sudo apt-get install libboost-all-dev
+
+git clone https://github.com/traveller59/spconv.git
+cd spconv
+git reset --hard f22dd9a
+git submodule init
+git submodule update --recursive
+python setup.py bdist_wheel
+```
+
+
 # Pointnet2.PyTorch
 
 * PyTorch implementation of [PointNet++](https://arxiv.org/abs/1706.02413) based on [erikwijmans/Pointnet2_PyTorch](https://github.com/erikwijmans/Pointnet2_PyTorch).
